@@ -4,6 +4,7 @@ pipeline {
     stage('Clone') {
       parallel {
         stage('Clone') {
+          agent any
           steps {
             echo 'clone code'
             sleep 1
